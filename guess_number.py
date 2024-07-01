@@ -3,7 +3,7 @@
 from random import randint
 
 # Получаем случайное число в диапазоне от 1 до 100.
-number = randint(1, 50)
+number = randint(1, 100)
 print('Угадайте число от 1 до 100')
 
 while True:
@@ -16,12 +16,12 @@ while True:
         print('Ваше число меньше того, что загадано.')
     
     # Если число больше загаданного...
-    if guess > number:
+    elif guess > number:
         # ...выводим сообщение.
         print('Ваше число больше того, что загадано.')
     
     # Если число угадано...
-    if guess == number:
+    elif guess == number:
         # ...прерываем выполнение программы и...
         break
 # ...выводим сообщение.
